@@ -1,0 +1,23 @@
+.col-md-4 {
+    padding: 1rem;
+    text-align: center;
+    color: #0d63c9;
+    /* border: 1px solid black; */
+}
+
+.ShowforMobile {
+    display: none;
+}
+
+.HideforMobile {
+    display: block;
+}
+
+@media all and (max-width:760px) {
+    .HideforMobile {
+        display: none;
+    }
+    .ShowforMobile {
+        display: block;
+    }
+}

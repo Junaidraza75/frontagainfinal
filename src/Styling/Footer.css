@@ -1,0 +1,153 @@
+#fIconsList {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+}
+
+.ficons {
+    font-size: 33px;
+    color: grey;
+    padding-left: 2%;
+}
+
+.ficons:hover {
+    color: rgb(86, 146, 217);
+}
+
+.ficonsMobile
+{
+    font-size: 40px;
+    color: grey;
+    padding-left: 2%;
+}
+.ficonsMobile:hover
+{
+    color: rgb(73, 73, 73);
+}
+
+#logoFooter {
+    padding-left: 0%;
+    font-size: 39px;
+    color: rgb(26, 107, 204);
+    font-weight: 900;
+}
+
+.fnav {
+    color: rgb(86, 146, 217);
+    font-size: 15px;
+    padding-left: 2%;
+}
+
+.fnav:hover {
+    text-decoration: underline;
+}
+
+#fnavBlock {
+    display: flex;
+    width: 100%;
+}
+
+#fmobileIconsList {
+    display: flex;
+    padding-left: 35%;
+}
+#cr
+{
+   margin-left: 4%; 
+   color: grey;
+}
+.footerSecondRow
+{
+    margin-left: -4.5%;
+}
+#footerContainer
+{
+    padding-left: 1.5%;
+}
+#fmobileIconsListHeading
+{
+    margin-left: 15%;
+}
+#fmobileIconsList
+{
+    margin-left:10%
+}
+@media all and (max-width:1000px) {
+    #cr
+    {
+       margin-left: 0%; 
+    }   
+}
+@media all and (max-width:576px) {
+    #fmobileIconsList {
+        padding-top: 5%;
+    }
+    #fmobileIconsListHeading {
+        position: absolute;
+        left: 4%;
+    }
+}
+
+@media all and (max-width:770px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        padding-left: initial;
+    }
+    #fmobileIconsList {
+        padding-left: 25%;
+    }
+}
+@media all and (max-width:767px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
+        padding-left: 25%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: 0%;
+    }
+}
+@media all and (max-width:576px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
+        padding-left: 25%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: 65%;
+    }
+}
+@media all and (max-width:576px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
+        padding-left: 0%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: initial;
+    }
+}
+
+@media all and (max-width:993px) {
+    #fnavBlock {
+        display: initial;
+        width: 100%;
+    }
+}

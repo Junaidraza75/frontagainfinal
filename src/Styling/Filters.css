@@ -1,0 +1,211 @@
+#filters {
+    background-color: rgb(13, 99, 201);
+}
+
+
+
+#containerForDesktop {
+    padding-top: 2%;
+ padding-left: 7%;
+
+    color: white;
+    font-weight: lighter;
+}
+
+
+#heading {
+    color: white;
+    font-weight: lighter;
+}
+
+#list {
+    list-style: none;
+    display: flex;
+    margin-left: -5.5%;
+}
+
+#list li {
+    margin-left: 3%;
+    font-size: 15px;
+}
+
+#list li Link {}
+
+#searchInput {
+    background-color: white;
+    width: 635px;
+    margin-top: 1%;
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#btnsearch {
+    background-color: rgb(240, 68, 50);
+    color: white;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.col {
+    width: 150px;
+    background-color: rgb(86, 146, 217);
+    color: #cbdaee;
+    margin-top: -8%;
+    margin-left: 0%;
+}
+
+#ROW1DROPDOWN {
+    display: flex;
+    width: fit-content;
+}
+
+#CollapseButton {
+    position: relative;
+    margin-top: 29%;
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.paraRow {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#ROW1DROPDOWN {
+    width: 60%;
+    margin-top: 2%;
+}
+
+#ROW2DROPDOWN {
+    width: 60%;
+    margin-top: 2%;
+}
+
+#ROW3DROPDOWN {
+    width: 80%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+#titleContainer {
+    width: 55%;
+}
+
+#CollapseButtonMobile {
+    display: none;
+    font-size: 13px;
+    font-weight: lighter;
+}
+#btnsearchMobile
+{
+    display: none;
+}
+
+@media all and (max-width:1205px) {
+    #CollapseButton {
+        display: none;
+    }
+    #CollapseButtonMobile {
+        display: block;
+    }
+    #searchInput {
+        width: 90%;
+    }
+    #btnsearch {
+        display: none;
+    }
+    #btnsearchMobile 
+    {
+        display: block;
+        background-color: rgb(240, 68, 50);
+        color: white;
+        border-radius: 2px;
+        width: 90%;
+        font-size: 16px;
+        border-radius: 5px;
+        
+        font-weight: lighter;
+    }
+
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
+
+
+/* For Mobile View */ 
+#containerForMobile {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    font-weight: lighter;
+    display: none;
+}
+@media all and (max-width:1245px)
+{
+    #containerForDesktop {
+        display: none;
+    }
+    #containerForMobile {
+        display: block;
+    }
+    #headingMobile   
+    {
+        text-align: center;
+    }
+    #titleContainerMobile
+    {
+        text-align: center;
+    }
+    .linkMobileFilter
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .linkMobileFilter:hover
+    {
+        color: white;
+        text-decoration: underline;
+    }
+    #searchInputMobile
+    {
+        padding-top: 3%;
+    }
+    .labelMobileFilterSelect
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    #halfMobileSelect
+    {
+         width: 50%;
+    }
+}
+
+@media all and (max-width:325px)
+{
+    .linkMobileFilter
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+}
+
+/* For Mobile View */
+  

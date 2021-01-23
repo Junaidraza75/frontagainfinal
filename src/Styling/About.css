@@ -1,0 +1,20 @@
+.title{
+    color: rgb(13, 99, 201);
+    /* margin: 8%; */
+    font-weight: lighter;
+}
+.para{
+    margin-top: -5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#line{
+    border-left: 1px solid rgb(219, 219, 219);
+}
+
+@media all and (max-width:770px) {
+    #line{
+        border-left: 0px solid grey;
+    }   
+}

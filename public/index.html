@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+ 
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+ 
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <!-- MDB -->
+
+
+
+
+ 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(function() {
+        var colours = ['#0D63C9'];
+
+        var data = new google.visualization.DataTable({"cols":[{"id":"Year","label":"Year","type":"string","role":null},{"id":"AveragePropertyPrice","label":"Average Property Price","type":"number","role":null}],"rows":[{"c":[{"v":2016,"f":null},{"v":800000,"f":"R 800 000"}]},{"c":[{"v":2017,"f":null},{"v":820000,"f":"R 820 000"}]},{"c":[{"v":2018,"f":null},{"v":850000,"f":"R 850 000"}]},{"c":[{"v":2019,"f":null},{"v":880000,"f":"R 880 000"}]},{"c":[{"v":2020,"f":null},{"v":903500,"f":"R 903 500"}]}]}, false);
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, {
+            label: data.getColumnLabel(1),
+            type: 'number',
+            calc: function (dt, row) {
+                // reformat the data in millions
+                var vCalc = dt.getValue(row, 1);
+                if (vCalc != null) vCalc = vCalc / 1000000;
+
+                return {v: vCalc, f: dt.getFormattedValue(row, 1)};
+            }
+        }]);
+
+        var options = {
+            height: 200,
+            title: null,
+            backgroundColor: "transparent",
+            colors: colours,
+            legend: { position: "none" },
+            chartArea: { top: 20, left: 50, height: 128, width: '100%' },
+            hAxis: {
+                gridlines: {
+                    count: -1
+                },
+                maxAlternation: 1, // use a maximum of 1 line of labels
+                minTextSpacing: 4, // minimum spacing between adjacent labels, in pixels
+                slantedText: false,
+                textStyle: { fontSize: 10 }
+            },
+            vAxis: {
+                format: "R#.##m",
+                gridlines: {
+                    interval: [1, 1.25, 2.5, 5]
+                },
+                textStyle: { fontSize: 11 }
+            },
+            tooltip: { textStyle: { fontSize: 11 } }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('averagePropertyPriceGraph_Province_1'));
+        chart.draw(view, options);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

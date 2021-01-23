@@ -1,0 +1,179 @@
+#bigcard {
+    width: 84%;
+    /* margin-left: 51%; */
+    border: 1px solid rgb(192, 218, 241);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1x 1px 1px 1px rgb(87, 86, 86);
+}
+
+#bigcard:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+#topimage {
+    height: 50px;
+}
+
+.leftrow {
+    margin-bottom: 0.5%;
+    padding-right: 0%;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#rightimage {
+    width: 104.5%;
+    /* margin-left: 0%; */
+    height: 100%;
+    padding-right: 1%;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#heart {
+    text-align: right;
+    font-size: 30px;
+    color: grey;
+    /* border: 1px solid rgb(66, 66, 66); */
+}
+
+#heart:hover {
+    color: rgb(201, 30, 30);
+    text-shadow: 2px 2px 2px grey;
+}
+
+#title {
+    padding-top: 3%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#price {
+    color: #0b63c9;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+#street {
+    text-align: right;
+}
+
+.things {
+    font-size: 20px;
+}
+
+.thingsText {
+    font-size: 10px;
+}
+
+/* For desktop side images */
+
+#ForDesktopSideImages {
+    display: block;
+}
+
+/* For desktop side images */
+
+/* Show for mobile side images */
+
+#ForMobileSideImages {
+    display: none;
+}
+
+/* Show for mobile side images */
+
+@media all and (max-width:1325px) {
+    #bigcard {
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+@media all and (max-width:960px) {
+    #bigcard {
+        width: 100%;
+        margin: auto;
+    }
+    #rightimage {
+        width: 103%;
+    }
+    .leftrow {
+        width: 98%;
+        margin-top: 2%;
+        height: 80px;
+    }
+}
+
+@media all and (max-width:856px) {
+    #bigcard {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:766px) {
+    .leftrow {
+        width: 98%;
+        margin-top: 2%;
+        height: 80px;
+    }
+    /* For desktop side images */
+    #ForDesktopSideImages {
+        display: none;
+    }
+    /* For desktop side images */
+    /* Show for mobile side images */
+    #ForMobileSideImages {
+        display: block;
+        display: flex;
+    }
+    /* Show for mobile side images */
+}
+
+@media all and (max-width:582px) {
+    #bigcard {
+        width: 70%;
+    }
+    .leftrow {
+        width: 35%;
+        margin-top: 2%;
+        height: 80px;
+    }
+}
+@media all and (max-width:578px) {
+    #bigcard {
+        width: 70%;
+    }
+}
+
+@media all and (max-width:456px) {
+    #bigcard {
+        width: 80%;
+    }
+}
+
+@media all and (max-width:350px) {
+    #bigcard {
+        width: 90%;
+    }
+}
+
+@media all and (max-width:760) {
+    #thigsRow {
+        margin-top: -20%;
+    }
+}
+
+@media all and (max-width:490px) {
+    /* .leftrow {
+        width: 100%;
+        margin-top: 2%;
+        height: 100px;
+    } */
+    #rightimage {
+        width: 106%;
+    }
+}
+
+@media all and (max-width:300px) {
+    #bigcard {
+        width: 90%;
+    }
+}
