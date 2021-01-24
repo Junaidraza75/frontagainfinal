@@ -700,7 +700,11 @@ class Admin extends React.Component {
                                 <input style={{ width: "100%", marginLeft: "2%" }} type="file" multiple className="form-control" id="customFile" onChange={this.onMobileImageChange} />
                                 {/* <button style={{ marginTop: "10px", marginLeft: "2%", marginBottom: "10px", fontSize: "18px" }} className="btn btn-light">Upload</button> */}
                                 <br />
-                                {this.state.photo.length ? <img src={this.state.photo.length ? URL.createObjectURL(this.state.photo[0]) : ''} width={100} style={{ marginLeft: 20 }} alt="Uploaded images" height="auto" /> : ''}
+                                {this.state.photo.length ? this.state.photo.map((ele) => {
+                                    // console.log(ele, 'ele');
+                                
+                                   return <img src={ele ? URL.createObjectURL(ele) : ''} width={100} style={{ marginLeft: 20 }} alt="Uploaded images" height="auto" /> 
+                                } )  : ''}
                             </div>
                             {/* Here the uploaded image will be here */}
 
