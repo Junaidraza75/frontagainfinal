@@ -1299,7 +1299,7 @@ class Search extends Component {
         </div>
 
         <br />
-        <SaleinGauteng />
+        {/* <SaleinGauteng /> */}
         {/* From here all data can be easily sent to one to stop using multiple 
            components and use a loop to render that by passing data through loops */}
         {/* <div id="searchblock"> */}
@@ -1345,7 +1345,7 @@ class Search extends Component {
               <div id="divArticles">
                 <div id="divArticlesInside">
                   <h4 id="titlesideAd">
-                    property<span className="text-danger">24</span>
+                    1Nyumba<span className="text-danger"></span>
                   </h4>
                   <h5 id="SubTitlesideAd">Home Loans</h5>
                   <p className="paraArticles">
